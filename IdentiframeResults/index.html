@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuration of Project Environment &#8212; Identiframe 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="configuration-of-project-environment">
+<h1>Configuration of Project Environment<a class="headerlink" href="#configuration-of-project-environment" title="Permalink to this headline">¶</a></h1>
+<p>This is an API that performs various Image Analysis Tasks such as Object Detection, Face Detection and Text Analysis using Python3, OpenCV and Flask.</p>
+<div class="section" id="overview-on-how-to-run-this-api">
+<h2>Overview on How to Run this API<a class="headerlink" href="#overview-on-how-to-run-this-api" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Either install a Python IDE or create a Python virtual environment to install the packages required</p></li>
+<li><p>Install packages required</p></li>
+<li><p>Run the app as mentioned below.</p></li>
+</ol>
+</div>
+<div class="section" id="setup-procedure">
+<h2>Setup procedure<a class="headerlink" href="#setup-procedure" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><dl>
+<dt>Configure project environment (Either A. Install Python IDE OR B. Create a Virtual Environment)</dt><dd><ol class="upperalpha">
+<li><dl>
+<dt>Install Python IDE</dt><dd><ul>
+<li><p>Open the Identiframe API Directory</p></li>
+<li><p>Manually install packages to project OR type the command below on the activated virtual environment.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Create a Python Virtual Environment</dt><dd><ul>
+<li><p>Install virtualenv:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">virtualenv</span>
+</pre></div>
+</div>
+</li>
+<li><p>Create virtialenv:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virtualenv</span> <span class="o">-</span><span class="n">p</span> <span class="n">python3</span> <span class="o">&lt;</span><span class="n">name</span> <span class="n">of</span> <span class="n">virtualenv</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install requirements:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Run app.py:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">app</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="endpoints-of-the-identiframe-api">
+<h2>Endpoints of the Identiframe API<a class="headerlink" href="#endpoints-of-the-identiframe-api" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Upload an Image</p></li>
+<li><p>Select what image analysis technique you wanted to apply</p></li>
+<li><p>Get the resultant image</p></li>
+<li><p>Get the supporting output files such as json or text files</p></li>
+<li><p>Download the supporting output files for your further usage or Analysis.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="documentation-for-the-code">
+<h1>Documentation for the Code<a class="headerlink" href="#documentation-for-the-code" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="module-app">
+<span id="identiframeapi-main"></span><h2>IdentiframeAPI main<a class="headerlink" href="#module-app" title="Permalink to this headline">¶</a></h2>
+<p>Identiframe API
+.. moduleauthor:: Virtusa</p>
+<dl class="py function">
+<dt id="app.index">
+<code class="sig-prename descclassname">app.</code><code class="sig-name descname">index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/app.html#index"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that integrates html template with logic functions.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-imageanalysis.image_analysis_controller">
+<span id="identiframeapi-controller"></span><h2>IdentiframeAPI controller<a class="headerlink" href="#module-imageanalysis.image_analysis_controller" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-controller"></span><dl class="py class">
+<dt id="imageanalysis.image_analysis_controller.ImageAnalysisController">
+<em class="property">class </em><code class="sig-prename descclassname">imageanalysis.image_analysis_controller.</code><code class="sig-name descname">ImageAnalysisController</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_config</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/image_analysis_controller.html#ImageAnalysisController"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.image_analysis_controller.ImageAnalysisController" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is the controller class that initializes all the application properties
+and controls the workflow between image_analysis_logic and app.</p>
+<dl class="py method">
+<dt id="imageanalysis.image_analysis_controller.ImageAnalysisController.predict">
+<code class="sig-name descname">predict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/image_analysis_controller.html#ImageAnalysisController.predict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.image_analysis_controller.ImageAnalysisController.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls and correlate all the functions required for predicting the objects/text/face from the image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns the output image in form of bytes.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>String</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-imageanalysis.image_analysis_logic">
+<span id="identiframeapi-objectdetectionlogic"></span><h2>IdentiframeAPI ObjectDetectionLogic<a class="headerlink" href="#module-imageanalysis.image_analysis_logic" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-ObjectDetectionLogic"></span><dl class="py class">
+<dt id="imageanalysis.image_analysis_logic.ImageAnalysisLogic">
+<em class="property">class </em><code class="sig-prename descclassname">imageanalysis.image_analysis_logic.</code><code class="sig-name descname">ImageAnalysisLogic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">IMG_UPLOAD_FOLDER</span></em>, <em class="sig-param"><span class="n">JSON_UPLOAD_FOLDER</span></em>, <em class="sig-param"><span class="n">YOLOV3_CONFIG</span></em>, <em class="sig-param"><span class="n">EXECUTION_PATH</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/image_analysis_logic.html#ImageAnalysisLogic"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.image_analysis_logic.ImageAnalysisLogic" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to perform image analysis and detects object from the image.</p>
+<dl class="py method">
+<dt id="imageanalysis.image_analysis_logic.ImageAnalysisLogic.darknet_model">
+<code class="sig-name descname">darknet_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Width</span></em>, <em class="sig-param"><span class="n">Height</span></em>, <em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">weights</span></em>, <em class="sig-param"><span class="n">image</span></em>, <em class="sig-param"><span class="n">classes</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/image_analysis_logic.html#ImageAnalysisLogic.darknet_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.image_analysis_logic.ImageAnalysisLogic.darknet_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used to detect the objects from the given image using pretrained darknet model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Width</strong> (<em>Int</em>) – Width of the input image.</p></li>
+<li><p><strong>Height</strong> (<em>Int</em>) – Height of the input image.</p></li>
+<li><p><strong>config</strong> (<em>File object</em>) – Configuration file that has model parameters.</p></li>
+<li><p><strong>weights</strong> (<em>File object</em>) – pretrained weights.</p></li>
+<li><p><strong>image</strong> (<em>Long</em>) – Input image.</p></li>
+<li><p><strong>classes</strong> (<em>List</em>) – List of objects from  COCO dataset.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Width of the bounding box.
+Height (Int): Height of the bounding box.
+x (Int): Top-left x-coordinate of the bounding box.
+y (Int): Top-left y-coordinate of the bounding box.
+class_id (Int): Index of detected object from the list of classes.
+confidence (Float): Confidence score.
+Boxes (List): Contains width,height,Top-left x-coordinate,Top-left y-coordinate of each bounding box.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Width (Int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.image_analysis_logic.ImageAnalysisLogic.draw_prediction">
+<code class="sig-name descname">draw_prediction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img</span></em>, <em class="sig-param"><span class="n">classes</span></em>, <em class="sig-param"><span class="n">class_id</span></em>, <em class="sig-param"><span class="n">confidence</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">x_plus_w</span></em>, <em class="sig-param"><span class="n">y_plus_h</span></em>, <em class="sig-param"><span class="n">COLORS</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/image_analysis_logic.html#ImageAnalysisLogic.draw_prediction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.image_analysis_logic.ImageAnalysisLogic.draw_prediction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to draw bounding box on the detected object with class name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>img</strong> (<em>Long</em>) – Input image</p></li>
+<li><p><strong>classes</strong> (<em>List</em>) – List of class of objects from COCO dataset.</p></li>
+<li><p><strong>class_id</strong> (<em>Int</em>) – Index of detected object from the list of classes.</p></li>
+<li><p><strong>confidence</strong> (<em>Float</em>) – Confidence score.</p></li>
+<li><p><strong>x</strong> (<em>Int</em>) – Top-left x-coordinate of the bounding box.</p></li>
+<li><p><strong>y</strong> (<em>Int</em>) – Top-left y-coordinate of the bounding box.</p></li>
+<li><p><strong>x_plus_w</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – Width of bounding box.</p></li>
+<li><p><strong>y_plus_h</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – Height of bounding box.</p></li>
+<li><p><strong>COLORS</strong> (<em>Numpy Array</em>) – Randomly generated color for each bounding box.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.image_analysis_logic.ImageAnalysisLogic.get_output_layers">
+<code class="sig-name descname">get_output_layers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">net</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/image_analysis_logic.html#ImageAnalysisLogic.get_output_layers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.image_analysis_logic.ImageAnalysisLogic.get_output_layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to get the output layer names in the model architecture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>net</strong> (<em>Class</em>) – Pretrained darknet model.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns the names of the output layers giving out predictions.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.image_analysis_logic.ImageAnalysisLogic.method_download">
+<code class="sig-name descname">method_download</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/image_analysis_logic.html#ImageAnalysisLogic.method_download"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.image_analysis_logic.ImageAnalysisLogic.method_download" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function returns the response as a json file when user clicks the download button in the UI.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Retuns json file containing detected objects and its respective coordinates and confidence score.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Json Response</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.image_analysis_logic.ImageAnalysisLogic.object_detection">
+<code class="sig-name descname">object_detection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image</span></em>, <em class="sig-param"><span class="n">YOLOV3_CONFIG</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/image_analysis_logic.html#ImageAnalysisLogic.object_detection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.image_analysis_logic.ImageAnalysisLogic.object_detection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that applies NMS and gives final output image and saves json object which has output values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>image</strong> (<em>Long</em>) – Input image.</p></li>
+<li><p><strong>YOLOV3_CONFIG</strong> (<em>String</em>) – Path where config file and weights for pretrained object are stored.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of detected objects.
+base64img (Bytes): Output image.
+object_json (Json object): Json object that has all detected objects and its respective coordinates and confidence score.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>object_list (List)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.image_analysis_logic.ImageAnalysisLogic.upload_file">
+<code class="sig-name descname">upload_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/image_analysis_logic.html#ImageAnalysisLogic.upload_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.image_analysis_logic.ImageAnalysisLogic.upload_file" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Function which accepts the input image uploaded by user and passes it to object_detection function and</dt><dd><p>returns the output image returned by that function.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns the output image.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Image (Long)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-imageanalysis.face_detection_logic">
+<span id="identiframeapi-facedetectionlogic"></span><h2>IdentiframeAPI FaceDetectionLogic<a class="headerlink" href="#module-imageanalysis.face_detection_logic" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-FaceDetectionLogic"></span><dl class="py class">
+<dt id="imageanalysis.face_detection_logic.DetectPerson">
+<em class="property">class </em><code class="sig-prename descclassname">imageanalysis.face_detection_logic.</code><code class="sig-name descname">DetectPerson</code><a class="reference internal" href="_modules/imageanalysis/face_detection_logic.html#DetectPerson"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.face_detection_logic.DetectPerson" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to perform image analysis and detects faces from the image.</p>
+<dl class="py method">
+<dt id="imageanalysis.face_detection_logic.DetectPerson.draw_prediction">
+<code class="sig-name descname">draw_prediction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">classes</span></em>, <em class="sig-param"><span class="n">class_id</span></em>, <em class="sig-param"><span class="n">confidence</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">x_plus_w</span></em>, <em class="sig-param"><span class="n">y_plus_h</span></em>, <em class="sig-param"><span class="n">COLORS</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/face_detection_logic.html#DetectPerson.draw_prediction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.face_detection_logic.DetectPerson.draw_prediction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to draw bounding box on the detected object with class name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>classes</strong> (<em>List</em>) – List of class of objects from COCO dataset.</p></li>
+<li><p><strong>class_id</strong> (<em>Int</em>) – Index of detected object from the list of classes.</p></li>
+<li><p><strong>confidence</strong> (<em>Float</em>) – Confidence score.</p></li>
+<li><p><strong>x</strong> (<em>Int</em>) – Top-left x-coordinate of the bounding box.</p></li>
+<li><p><strong>y</strong> (<em>Int</em>) – Top-left y-coordinate of the bounding box.</p></li>
+<li><p><strong>x_plus_w</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – Width of bounding box.</p></li>
+<li><p><strong>y_plus_h</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – Height of bounding box.</p></li>
+<li><p><strong>COLORS</strong> (<em>Numpy Array</em>) – Randomly generated color for each bounding box.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.face_detection_logic.DetectPerson.get_coordinates">
+<code class="sig-name descname">get_coordinates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/face_detection_logic.html#DetectPerson.get_coordinates"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.face_detection_logic.DetectPerson.get_coordinates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Once we have received the bounding boxes , confidence scores and classes, we will create
+a json list from the same and also draw the bounding boxes on the image and return the result.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns the output image in form of bytes.
+Json Object : Json object that has all detected objects and its respective coordinates and confidence score.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Long</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.face_detection_logic.DetectPerson.get_image_details">
+<code class="sig-name descname">get_image_details</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inp_image</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/face_detection_logic.html#DetectPerson.get_image_details"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.face_detection_logic.DetectPerson.get_image_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function reads the input image and creates blob for further processing.
+:param inp_image: Input image
+:type inp_image: Long</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.face_detection_logic.DetectPerson.get_predictions">
+<code class="sig-name descname">get_predictions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/face_detection_logic.html#DetectPerson.get_predictions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.face_detection_logic.DetectPerson.get_predictions" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gets the predicted bounding boxes, confidences and classes.
+This function uses the yolov3 weights and configuation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.face_detection_logic.DetectPerson.initialize_yolov3">
+<code class="sig-name descname">initialize_yolov3</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inp_image</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/face_detection_logic.html#DetectPerson.initialize_yolov3"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.face_detection_logic.DetectPerson.initialize_yolov3" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used to intialize the yolov3 weights and configurations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>inp_image</strong> (<em>Long</em>) – Input image</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.face_detection_logic.DetectPerson.predict_faces">
+<code class="sig-name descname">predict_faces</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">inp_image</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/face_detection_logic.html#DetectPerson.predict_faces"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.face_detection_logic.DetectPerson.predict_faces" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function will predict if there are any faces in the image and return the bounding
+boxes , confidence scores and classes. This function uses the haarcascaden technique for predicting
+the faces from the image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>inp_image</strong> (<em>Long</em>) – Input image</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.face_detection_logic.DetectPerson.train_model">
+<code class="sig-name descname">train_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/face_detection_logic.html#DetectPerson.train_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.face_detection_logic.DetectPerson.train_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function runs a forward pass to predict the objects present in the image.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-imageanalysis.text_detection_logic">
+<span id="identiframeapi-textdetectionlogic"></span><h2>IdentiframeAPI TextDetectionLogic<a class="headerlink" href="#module-imageanalysis.text_detection_logic" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-TextDetectionLogic"></span><dl class="py class">
+<dt id="imageanalysis.text_detection_logic.text_extract">
+<em class="property">class </em><code class="sig-prename descclassname">imageanalysis.text_detection_logic.</code><code class="sig-name descname">text_extract</code><a class="reference internal" href="_modules/imageanalysis/text_detection_logic.html#text_extract"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.text_detection_logic.text_extract" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to perform image analysis and detects text from the image.</p>
+<dl class="py method">
+<dt id="imageanalysis.text_detection_logic.text_extract.build_lines">
+<code class="sig-name descname">build_lines</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">table_cells</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/text_detection_logic.html#text_extract.build_lines"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.text_detection_logic.text_extract.build_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function builds table lines based on find table function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>table_cells</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – coordinates of text to form table</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>coordinates of horizontal and vertical lines</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.text_detection_logic.text_extract.draw_boxes">
+<code class="sig-name descname">draw_boxes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image</span></em>, <em class="sig-param"><span class="n">details</span></em>, <em class="sig-param"><span class="n">threshold_point</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/text_detection_logic.html#text_extract.draw_boxes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.text_detection_logic.text_extract.draw_boxes" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function draws boxes around the predicted texts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>image</strong> (<em>png</em>) – input out.png file</p></li>
+<li><p><strong>details</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><em>dict</em></a>) – coordinates of predicted texts</p></li>
+<li><p><strong>threshold_point</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – value for drawing box around the text</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.text_detection_logic.text_extract.final_output">
+<code class="sig-name descname">final_output</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">in_file</span></em>, <em class="sig-param"><span class="n">execution_path</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/text_detection_logic.html#text_extract.final_output"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.text_detection_logic.text_extract.final_output" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function returns final output image and writes detected text to the text file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>in_file</strong> (<em>Long</em>) – Input Image</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>output image.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Long</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.text_detection_logic.text_extract.find_table_in_boxes">
+<code class="sig-name descname">find_table_in_boxes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">boxes</span></em>, <em class="sig-param"><span class="n">cell_threshold</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">min_columns</span><span class="o">=</span><span class="default_value">2</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/text_detection_logic.html#text_extract.find_table_in_boxes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.text_detection_logic.text_extract.find_table_in_boxes" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function Identifies if any table structure is present</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>boxes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – Coordinates of text boxes</p></li>
+<li><p><strong>cell_threshold</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – threshold value of a cell. Defaults to 10.</p></li>
+<li><p><strong>min_columns</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – minimum column required for creating a table. Defaults to 2.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>table strcture coordinates</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.text_detection_logic.text_extract.find_text_boxes">
+<code class="sig-name descname">find_text_boxes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pre</span></em>, <em class="sig-param"><span class="n">min_text_height_limit</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">max_text_height_limit</span><span class="o">=</span><span class="default_value">70</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/text_detection_logic.html#text_extract.find_text_boxes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.text_detection_logic.text_extract.find_text_boxes" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used for idenntifying the texts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pre</strong> (<em>image</em>) – Pre processed image</p></li>
+<li><p><strong>min_text_height_limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – Minimum text height. Defaults to 2.</p></li>
+<li><p><strong>max_text_height_limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – Maximum text height. Defaults to 70.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>coordinates of bounding boxes for texts</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.text_detection_logic.text_extract.format_text">
+<code class="sig-name descname">format_text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">details</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/text_detection_logic.html#text_extract.format_text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.text_detection_logic.text_extract.format_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function formats the text captured</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>details</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><em>dict</em></a>) – dictonary of predicted texts from the image</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of formatted texts</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.text_detection_logic.text_extract.parse_text">
+<code class="sig-name descname">parse_text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">threshold_img</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/text_detection_logic.html#text_extract.parse_text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.text_detection_logic.text_extract.parse_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function predicts the text using Tesseract</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>threshold_img</strong> (<em>png</em>) – out.png file is taken as input</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>returns dictonary of english keywords</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="imageanalysis.text_detection_logic.text_extract.pre_process_image">
+<code class="sig-name descname">pre_process_image</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img</span></em>, <em class="sig-param"><span class="n">save_in_file</span></em>, <em class="sig-param"><span class="n">morph_size</span><span class="o">=</span><span class="default_value">8, 8</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/imageanalysis/text_detection_logic.html#text_extract.pre_process_image"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#imageanalysis.text_detection_logic.text_extract.pre_process_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function is used for pre processing the image</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>img</strong> (<em>jpg/png</em>) – Input image file</p></li>
+<li><p><strong>save_in_file</strong> (<em>png</em>) – Pre processed image is saved as pre.png</p></li>
+<li><p><strong>morph_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em>, </em><em>optional</em>) – Morphological transformation parameters. Defaults to (8, 8).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>pre processed image file</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>image</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Identiframe</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration of Project Environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview-on-how-to-run-this-api">Overview on How to Run this API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup-procedure">Setup procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#endpoints-of-the-identiframe-api">Endpoints of the Identiframe API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#documentation-for-the-code">Documentation for the Code</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-app">IdentiframeAPI main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-imageanalysis.image_analysis_controller">IdentiframeAPI controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-imageanalysis.image_analysis_logic">IdentiframeAPI ObjectDetectionLogic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-imageanalysis.face_detection_logic">IdentiframeAPI FaceDetectionLogic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-imageanalysis.text_detection_logic">IdentiframeAPI TextDetectionLogic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Virtusa.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
