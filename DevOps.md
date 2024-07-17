@@ -30,5 +30,6 @@
 
 5. [DevOps Learning Link](https://www.canva.com/design/DAF3f8aSnL4/_4aFV4xtinJEko-BUDlPcg/edit)
 
+6. DevOps is a kind-off culture or a practise. Devops will help your organisation to increase their ability to develop and productinalize the applications efficiently. Increases the ability to deliver applications successfully , easily and efficiently. DevOps is also about automation, CI/CD, quality, security, monitoring and testing. DevOps will reduce the manual process in application delivery
 
 
