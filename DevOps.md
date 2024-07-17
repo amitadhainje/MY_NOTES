@@ -22,10 +22,11 @@
 - Networking fundamentals
 - Learn any of the cloud like AWS, Azure or GCP. Preferred AWS
 - Microservices and Containerization. 
-* Knowledge of containers
-* Need to know docker.
-* Concepts of Microservices
+    * Knowledge of containers
+    * Need to know docker.
+    * Concepts of Microservices
 - Kubernetes
+- CI/CD - Used to deploy the application automatically
 
 5. [DevOps Learning Link](https://www.canva.com/design/DAF3f8aSnL4/_4aFV4xtinJEko-BUDlPcg/edit)
 
