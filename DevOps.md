@@ -12,3 +12,12 @@
 * Github
 * Docker
 * Kubernetes
+
+
+4. We need to understand the following concepts while learning DevOps - [DevOps Learning Link from Cloud Champ ] (https://www.canva.com/design/DAF3f8aSnL4/_4aFV4xtinJEko-BUDlPcg/edit)
+- SDLC = 
+
+
+5. DevOps Learning Links 
+- [Cloud Champ YouTube Channel ] (https://www.youtube.com/@cloudchamp)
+- [Basics of SDLC] (https://www.geeksforgeeks.org/software-development-life-cycle-sdlc/)
