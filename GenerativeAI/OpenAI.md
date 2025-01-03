@@ -8,4 +8,12 @@
 6. Text to video - OpenAI Sora
 7. Critical breakthrough in GenAI came with the research paper = "Attention is all you need" which introduced a special neural network model named "Transformers".
 8. Statistical ML ==> Neural Networks ==> RNN ==> Transformers
-9. 
+9. Stochastic means a system which is characterised by randomness or probability. 
+10. Examples of LLM - 
+    1. PaLM2 by Google
+    2. LLaMA by Facebook (Meta)
+    3. ChatGPT by OpenAI
+11. While training ChatGPT, OpenAI used Reinforcement Learning with Human Feedback (RLHF). OpenAI used huge intervention of humans to make ChatGPT less toxic. 
+12. Embeddings is a numeric representation of text in form of a vector such that you can capture the meaning of the text. Vector Database allows to store these embeddings and perform efficient search on these embeddings. Semantic search is understanding the intent of the user query and using the context of the user query to perform the search. 
+12. BERT and GPT are based on transformer architecture. ElMO based on LSTM.
+13. Retrieval Augmented Generation (RAG) - 
