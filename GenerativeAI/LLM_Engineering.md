@@ -1,3 +1,5 @@
+# LLM ENGINEERING 
+
 1. We are using “UV” instead of conda environment. UV  is built using rust and it is much faster can conda.
 
 2. Use the following version of OpenAI - 2.7.2
@@ -92,6 +94,8 @@ https://www.ibm.com/think/topics/agentic-ai-vs-generative-ai
 https://wingedsheep.com/building-a-language-model/
 
 https://medium.com/@sjasmeet135/transforming-text-generation-the-power-of-transformers-in-llms-703b236fa03b
+
+29. Tokens - In early days neural networks were trained at the character level. Predict the next character in the sequence. Small vocab but expects too much from the network. Then the neural networks were trained off words, predict the next word in the sequence. It was easier than the previous approach but sometimes the rare words were omitted. The breakthrough was to work with the chunks of words "Tokens". A middle ground : manageable vocab , and elegantly handles the word stems. It is different from vectors. Visit the following website - https://platform.openai.com/tokenizer and you will get a slight hint of how GPT models generate the tokens. 
 
 
 
