@@ -20,6 +20,83 @@
 
 8. Transformers - 2017, Google researchers wrote a paper named “Attention is all you need” proposing a new architecture called Transformers. 
 
+9. Install Ollama on Mac. Ollama is free and you can use is on your local machine. ChatGPT OR Claude are good chatbots for getting online answers for your questions. 
+
+10. Create the API Keys and do a sample code for the following - 
+OPENAI API Key
+Google Gemini Key
+Tavily API Key
+
+11. Learn the following concepts in detail - 
+LangChain
+LangGraph
+Agno - https://youtube.com/watch?v=aKCgiq9z7JA
+Google ADK
+Agno + custom tool
+Agno + streamlit + Python Tools
+
+12. AI code Editors - 
+Github Copilot
+Amazon Q
+Gemini Code Assist
+Cursor
+Replit
+Codex - Developed by OPENAI
+Claude Code - Developed by Anthropic
+Windsurf & Devin - Developed by Congnition
+
+13. We are going to focus on Claude Code. It is paid application. AWS Claude. Claude Code extension is present in VS code. Probably it will be present in PyCharm also.
+
+14. Key components of the AI Agents are environment, sensors, the model, decision making logic, actuators and feedback mechanisms. They are the building blocks for creating AI Agents. Different types of AI Agents have different environments. The self-driving car will have environments like roads, vehicles, weather conditions  etc… 
+
+15. AI agent can operate in digital or physical environments. Sensors are the data collection tools for AI Agents. AI Agents receives loads of information from Sensors. In case of AI agents , Models are like brains for AI Agents. 
+Models can be complex LLM to simple ML algorithms. Decision making logic helps the AI Agent to take proper decisions. Actions are performed by the AI agent as the end result of all the above components. Actuators help agents to take the actions. There are virtual actuators like APIs. 
+
+16. The key features of AI Agents is to learn and adapt to the environments. 
+AI Agents structures can be classified based on their complexity and functionality. Few of the AI Agent Structures are as follows - 
+    1. Simple Reflex Agent
+    2. Model-Based Reflex Agent
+    3. Goal-Based Agent
+    4. Utility-Based Agent
+    5. Learning Agent	
+    
+19. Key Characteristics of a Sophisticated AI Agent are as follows-
+    1. Profile and Persona - It decides how the agents must interact with the users. Agents background. They decide that how the agent should interact with users. Like a Tutor/Social Media Post Planning
+    2. Memory - Added context provided to the agent. 
+    3. Reasoning - Agents ability to draw conclusions and solve problems.
+    4. Actions - Changes the environment with its actions
+    Learning Capabilities - 
+
+20. Not all agents types must have all the above five characteristics to qualify as agents. 
+
+21. Simple Reflex Agent - fundamental tool that reacts on directly based immediate perception. It is not capable of learning	or adapting. It follows hard-coded rules. It is simply an agent . It is not an AI Agent.
+
+22.  Model Based Reflex Agent - they perceive the environment. It is an AI agent. It does not necessarily learn or adapt. Does not improve its strategy based on experience. 
+
+23. Goal Based Agent - A goal-based AI agent acts to achieve specific objectives by choosing actions that best lead to its desired goal. It uses goal information to make decisions dynamically rather than just following fixed rules.
+
+24. Utility based Agent - decision logic is based on utility evaluation. Aims to evaluate actions based on potential returns.
+
+25. Learning Agent - It has an extra component called the “Learning Agent” and it enhances the agent over time. It possesses the five components of the AI agent + the learning agent. It is capable of self-refining.
+
+26. HITL ( Human In The Loop ) - emphasises the continuous involvement of humans in training monitoring and refinement of AI Agents. 
+
+27. Frameworks for building AI Agents - ReWoo & ReAct
+ReWOO - Reasoning without observations 
+ReAct - Reasoning & Action
+
+28. Read the following links -https://medium.com/@prashantgupta15/ai-evolution-predictive-ai-generative-ai-and-agentic-ai-7faa85f71b12
+
+https://www.ibm.com/think/topics/agentic-ai-vs-generative-ai
+
+https://wingedsheep.com/building-a-language-model/
+
+https://medium.com/@sjasmeet135/transforming-text-generation-the-power-of-transformers-in-llms-703b236fa03b
+
+
+
+
+
 
 
 
