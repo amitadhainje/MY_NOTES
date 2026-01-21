@@ -111,7 +111,7 @@ https://medium.com/@sjasmeet135/transforming-text-generation-the-power-of-transf
 **Examples:** GPT base models, LLaMA base, Falcon base.
 
 
-## 2. Instruction-Tuned LLMs
+#### 2. Instruction-Tuned LLMs
 
 👉 *Models trained to follow human instructions*
 
@@ -121,7 +121,7 @@ https://medium.com/@sjasmeet135/transforming-text-generation-the-power-of-transf
 
 **Examples:** ChatGPT-style models, LLaMA-Instruct, Mistral-Instruct.
 
-## 3. Chat / Aligned LLMs
+#### 3. Chat / Aligned LLMs
 
 👉 *Safety-aligned conversational models*
 
@@ -138,6 +138,8 @@ If you meant architecture instead, it can also be:
 1. **Closed-source LLMs** (GPT-4/5, Claude, Gemini)
 2. **Open-source LLMs** (LLaMA, Mistral, Falcon)
 3. **Domain-specific LLMs** (medical, legal, finance fine-tuned models)
+
+
 
 
 
