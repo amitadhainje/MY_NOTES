@@ -5,8 +5,8 @@
 2. Use the following version of OpenAI - 2.7.2
 
 3. There are two types of prompt - 
-    1. { ‘role’ : “system”, “content”:”system message goes here”}
-    2. {‘role’ : “user”, “content”:”hi how are you?”}
+* { ‘role’ : “system”, “content”:”system message goes here”}
+* {‘role’ : “user”, “content”:”hi how are you?”}
 
 4. Assignment - Scrape a website and summarise it using openAI
 
@@ -15,37 +15,37 @@
 6. Open Source Models - Llama from Meta, Mixtral from Mistral, Qwen from Alibaba cloud, Gemma from Google, Phi from Microsoft, DeepSeek from DeepSeekAI, GPT-OSS from OpenAI
 
 7. Three different ways to used the models -
-    1. Chat interfaces like ChatGPT
-    2. Cloud APIs ( LLM API, Frameworks like LangChain, Managed AI cloud services like AWS BedRock, Google Vertex, Azure ML )
-    3. Direct Interface. Using HuggingFace & Transformers library with Ollama to run locally.
-    4. There is a different model called “Groq”. This is different than Elon musk’s grok
+* Chat interfaces like ChatGPT
+* Cloud APIs ( LLM API, Frameworks like LangChain, Managed AI cloud services like AWS BedRock, Google Vertex, Azure ML )
+* Direct Interface. Using HuggingFace & Transformers library with Ollama to run locally.
+* There is a different model called “Groq”. This is different than Elon musk’s grok
 
 8. Transformers - 2017, Google researchers wrote a paper named “Attention is all you need” proposing a new architecture called Transformers. 
 
 9. Install Ollama on Mac. Ollama is free and you can use is on your local machine. ChatGPT OR Claude are good chatbots for getting online answers for your questions. 
 
 10. Create the API Keys and do a sample code for the following - 
-OPENAI API Key
-Google Gemini Key
-Tavily API Key
+* OPENAI API Key
+* Google Gemini Key
+* Tavily API Key
 
 11. Learn the following concepts in detail - 
-LangChain
-LangGraph
-Agno - https://youtube.com/watch?v=aKCgiq9z7JA
-Google ADK
-Agno + custom tool
-Agno + streamlit + Python Tools
+* LangChain
+* LangGraph
+* Agno - https://youtube.com/watch?v=aKCgiq9z7JA
+* Google ADK
+* Agno + custom tool
+* Agno + streamlit + Python Tools
 
 12. AI code Editors - 
-Github Copilot
-Amazon Q
-Gemini Code Assist
-Cursor
-Replit
-Codex - Developed by OPENAI
-Claude Code - Developed by Anthropic
-Windsurf & Devin - Developed by Congnition
+* Github Copilot
+* Amazon Q
+* Gemini Code Assist
+* Cursor
+* Replit
+* Codex - Developed by OPENAI
+* Claude Code - Developed by Anthropic
+* Windsurf & Devin - Developed by Congnition
 
 13. We are going to focus on Claude Code. It is paid application. AWS Claude. Claude Code extension is present in VS code. Probably it will be present in PyCharm also.
 
@@ -56,18 +56,18 @@ Models can be complex LLM to simple ML algorithms. Decision making logic helps t
 
 16. The key features of AI Agents is to learn and adapt to the environments. 
 AI Agents structures can be classified based on their complexity and functionality. Few of the AI Agent Structures are as follows - 
-    1. Simple Reflex Agent
-    2. Model-Based Reflex Agent
-    3. Goal-Based Agent
-    4. Utility-Based Agent
-    5. Learning Agent	
+* Simple Reflex Agent
+* Model-Based Reflex Agent
+* Goal-Based Agent
+* Utility-Based Agent
+* Learning Agent	
     
 19. Key Characteristics of a Sophisticated AI Agent are as follows-
-    1. Profile and Persona - It decides how the agents must interact with the users. Agents background. They decide that how the agent should interact with users. Like a Tutor/Social Media Post Planning
-    2. Memory - Added context provided to the agent. 
-    3. Reasoning - Agents ability to draw conclusions and solve problems.
-    4. Actions - Changes the environment with its actions
-    Learning Capabilities - 
+* Profile and Persona - It decides how the agents must interact with the users. Agents background. They decide that how the agent should interact with users. Like a Tutor/Social Media Post Planning
+* Memory - Added context provided to the agent. 
+* Reasoning - Agents ability to draw conclusions and solve problems.
+* Actions - Changes the environment with its actions
+* Learning Capabilities
 
 20. Not all agents types must have all the above five characteristics to qualify as agents. 
 
@@ -99,7 +99,7 @@ https://medium.com/@sjasmeet135/transforming-text-generation-the-power-of-transf
 
 30. “Flavours of LLMs” is usually explained in **three broad categories**, based on how they are trained and used:
 
-## 1. Base (Foundation / Pretrained) LLMs
+#### 1. Base (Foundation / Pretrained) LLMs
 
 👉 *Raw language understanding models*
 
@@ -120,7 +120,6 @@ https://medium.com/@sjasmeet135/transforming-text-generation-the-power-of-transf
 * More useful for applications directly.
 
 **Examples:** ChatGPT-style models, LLaMA-Instruct, Mistral-Instruct.
-
 
 ## 3. Chat / Aligned LLMs
 
