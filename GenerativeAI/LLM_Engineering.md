@@ -97,6 +97,50 @@ https://medium.com/@sjasmeet135/transforming-text-generation-the-power-of-transf
 
 29. Tokens - In early days neural networks were trained at the character level. Predict the next character in the sequence. Small vocab but expects too much from the network. Then the neural networks were trained off words, predict the next word in the sequence. It was easier than the previous approach but sometimes the rare words were omitted. The breakthrough was to work with the chunks of words "Tokens". A middle ground : manageable vocab , and elegantly handles the word stems. It is different from vectors. Visit the following website - https://platform.openai.com/tokenizer and you will get a slight hint of how GPT models generate the tokens. 
 
+30. “Flavours of LLMs” is usually explained in **three broad categories**, based on how they are trained and used:
+
+## 1. Base (Foundation / Pretrained) LLMs
+
+👉 *Raw language understanding models*
+
+* Trained on massive general text data.
+* Good at predicting next words, understanding grammar, context, and facts.
+* Not aligned to follow instructions well.
+* Example use: research, further fine-tuning.
+
+**Examples:** GPT base models, LLaMA base, Falcon base.
+
+
+## 2. Instruction-Tuned LLMs
+
+👉 *Models trained to follow human instructions*
+
+* Fine-tuned on prompt–response datasets.
+* Better at answering questions, summarizing, reasoning.
+* More useful for applications directly.
+
+**Examples:** ChatGPT-style models, LLaMA-Instruct, Mistral-Instruct.
+
+
+## 3. Chat / Aligned LLMs
+
+👉 *Safety-aligned conversational models*
+
+* Further trained with RLHF (human feedback).
+* Optimized for helpfulness, safety, and conversational tone.
+* Best for end-user interaction.
+
+**Examples:** ChatGPT, Claude, Gemini chat models.
+
+### Another popular “3-flavour” view (deployment perspective)
+
+If you meant architecture instead, it can also be:
+
+1. **Closed-source LLMs** (GPT-4/5, Claude, Gemini)
+2. **Open-source LLMs** (LLaMA, Mistral, Falcon)
+3. **Domain-specific LLMs** (medical, legal, finance fine-tuned models)
+
+
 
 
 
