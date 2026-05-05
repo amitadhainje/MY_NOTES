@@ -34,7 +34,32 @@
 
 For example, in a real-world scenario like an e-commerce system, when a user places an order, the order service sends an event to Kafka. This event is then consumed by multiple systems such as payment processing, inventory management, and notification services. Each of these systems can act on the event and may produce new events, continuing the chain. This chain of events allows systems to work independently while still staying connected through Kafka. It helps in building scalable, real-time, and event-driven architectures where data flows continuously between different components.
 
-- Kafka Stream APIs: The Kafka Streams API in Apache Kafka is a client library used to process and transform data streams in real time. It allows you to read data from Kafka topics, apply operations like filtering, grouping, and aggregations, and write the results back to new topics. It runs inside your application (no separate cluster needed), is scalable, and handles fault tolerance automatically. It is commonly used for real-time analytics, data transformations, and building streaming pipelines.
+## Kafka Stream APIs
+
+- The Kafka Streams API in Apache Kafka is a client library used to process and transform data streams in real time. It allows you to read data from Kafka topics, apply operations like filtering, grouping, and aggregations, and write the results back to new topics. It runs inside your application (no separate cluster needed), is scalable, and handles fault tolerance automatically. It is commonly used for real-time analytics, data transformations, and building streaming pipelines.
+
+## Paritions 
 
 - In Apache Kafka, a **partition** is a division of a topic that allows data to be split and stored across multiple servers. This helps Kafka handle large volumes of data efficiently. Each partition stores messages in order and assigns them a unique offset. Partitions enable parallel processing, so multiple consumers can read data at the same time, improving performance and scalability.
+
+## Consumer Groups in Kafka
+
+- In Apache Kafka, a **consumer group** is a set of consumers that work together to read data from a topic. Instead of each consumer reading all the data, the partitions of a topic are divided among the consumers in the group. Each partition is read by only one consumer within the group at a time, which avoids duplication and enables parallel processing. This makes consumer groups important for scaling data consumption and handling large data streams efficiently.
+
+## Kafka Brokers
+
+- In Apache Kafka, a **broker** is a server that stores data and handles requests from producers and consumers. When a producer sends data, it goes to a broker, and when a consumer reads data, it fetches it from a broker. Each broker manages one or more topic partitions and is responsible for storing them on disk. Multiple brokers work together to form a Kafka cluster, which helps in distributing data, improving scalability, and ensuring fault tolerance. Stores messages on a disk for a configurable retention policy. Hence, Consumers can read the event multiple times and whenever they want. Replay of messages helps in historical data analysis.
+
+## ZooKeeper in Kafka
+
+Apache ZooKeeper is a distributed coordination service that was traditionally used by Apache Kafka to manage and coordinate the Kafka cluster. It helps Kafka by keeping track of important metadata such as which brokers are active, which broker is the leader for each partition, and cluster configuration details. ZooKeeper also helps in leader election, ensuring that if one broker fails, another broker automatically takes over as the leader. Additionally, it maintains synchronization between different brokers and keeps the system consistent. However, in newer versions of Kafka, ZooKeeper is being replaced by an internal mechanism called KRaft, which removes the dependency on ZooKeeper and simplifies the architecture.
+
+
+## Kafka Raft (KRaft)
+
+In Apache Kafka, **Kafka Raft (KRaft)** is a built-in consensus mechanism that replaces the need for Apache ZooKeeper. KRaft uses the Raft protocol to manage cluster metadata, leader election, and coordination between brokers. Instead of relying on an external system like ZooKeeper, Kafka now handles everything internally, making the architecture simpler and easier to manage. With KRaft, a set of Kafka nodes act as controllers that maintain metadata in a fault-tolerant way, ensuring consistency even if some nodes fail. This improves scalability, reduces operational complexity, and is the default approach in newer Kafka versions.
+
+
+
+
 
