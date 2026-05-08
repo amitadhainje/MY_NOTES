@@ -89,5 +89,70 @@
 * Consistency across environments
 * Easy rollback (reuse previous layers)
 
+### Port Binding 
+
+**Port binding in Docker** is the process of connecting a port inside a container to a port on the host machine so that external systems (like your browser or APIs) can access the application running inside the container. Containers run in an isolated environment. By default, applications inside a container are **not accessible from outside**. Port binding exposes the container’s service to the host system or network.
+
+
+### 🔹 How Port Binding Works
+
+* You map a **host port → container port**.
+* Syntax:
+
+  ```bash
+  docker run -p <host_port>:<container_port> image_name
+  ```
+* Example:
+
+  ```bash
+  docker run -p 8080:80 nginx
+  ```
+
+  * `80` → port inside container (where app runs)
+  * `8080` → port on host machine
+  * You access app via: `http://localhost:8080`
+
+
+### 🔹 Key Concepts
+
+* **Container Port**: Port where the application runs inside the container.
+* **Host Port**: Port exposed on your local machine.
+* Format: `host:container`
+
+---
+
+### 🔹 Multiple Port Bindings
+
+* You can bind multiple ports:
+
+  ```bash
+  docker run -p 8080:80 -p 4430:443 nginx
+  ```
+
+---
+
+### 🔹 Automatic Port Assignment
+
+* If you don’t specify host port:
+
+  ```bash
+  docker run -p 80 nginx
+  ```
+* Docker assigns a random host port.
+* You can check using:
+
+  ```bash
+  docker ps
+  ```
+
+---
+
+### 🔹 Security Aspect
+
+* Only bound ports are accessible externally.
+* Helps control which services are exposed.
+
+---
+
 
 
