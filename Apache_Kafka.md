@@ -2,6 +2,9 @@
 
 ---
 
+- Learning Links - https://www.youtube.com/watch?v=QkdkLdMBuL0&t=918s
+- https://www.youtube.com/watch?v=B7CwU_tNYIE&t=1764s
+
 ## Why Apache Kafka
 
 - Apache Kafka is used when we need to handle large amounts of data in real time in a reliable and scalable way. In modern systems, applications continuously generate data such as logs, transactions, user activity, and events. Kafka helps in collecting and processing this data as it is generated, instead of waiting for batch processing.
@@ -57,7 +60,7 @@ Apache ZooKeeper is a distributed coordination service that was traditionally us
 
 ## Kafka Raft (KRaft)
 
-In Apache Kafka, **Kafka Raft (KRaft)** is a built-in consensus mechanism that replaces the need for Apache ZooKeeper. KRaft uses the Raft protocol to manage cluster metadata, leader election, and coordination between brokers. Instead of relying on an external system like ZooKeeper, Kafka now handles everything internally, making the architecture simpler and easier to manage. With KRaft, a set of Kafka nodes act as controllers that maintain metadata in a fault-tolerant way, ensuring consistency even if some nodes fail. This improves scalability, reduces operational complexity, and is the default approach in newer Kafka versions.
+In Apache Kafka, **Kafka Raft (KRaft)** is a built-in consensus mechanism that replaces the need for Apache ZooKeeper. KRaft uses the Raft protocol to manage cluster metadata, leader election, and coordination between brokers. Instead of relying on an external system like ZooKeeper, Kafka now handles everything internally, making the architecture simpler and easier to manage. With KRaft, a set of Kafka nodes act as controllers that maintain metadata in a fault-tolerant way, ensuring consistency even if some nodes fail. This improves scalability, reduces operational complexity, and is the default approach in newer Kafka versions. 
 
 
 
