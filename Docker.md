@@ -17,6 +17,10 @@
 
 - A Docker image is a lightweight, standalone package that contains everything needed to run an application, including code, libraries, dependencies, and configuration files. It is immutable, meaning once created, it does not change, ensuring consistency across environments. Docker images are used to create containers, which are runnable instances of those images. They are built using a Dockerfile and can be shared via repositories like Docker Hub. This makes deployment faster, scalable, and consistent across development, testing, and production environments. Docker Image is kind of an executable file. It has instructions to build the container. Docker image helps us create multiple containers. When we create a container from an image, the whole environment setup is created inside the container and the container uses the computer resources.
 
+---
+
+### Docker Commands
+
 - Following are the basic docker commands -
   - docker pull IMAGE_NAME
   - docker images
@@ -31,15 +35,18 @@
   - Command to run the container in the background mode - docker run -d IMAGE_NAME
   - By default all the containers run in attach mode. 
   - Create container by custom name = docker run -d IMAGE_NAME --name MyCustomName
+  - Get the logs of the container - docker logs CONT_NAME
+  - If we want to run extra commands on a running container then we can use the following command - docker exec -it CONT_ID /bin/bash
+  - Command to check docker network - docker network ls
+  - Command to create the docker network - docker network create NETWORK_NAME
 
+---
 
 ### 🔹 What are Docker Image Layers?
-
 * A Docker image is built as a **stack of layers**, where each layer represents a change to the filesystem.
 * These changes come from instructions in a **Dockerfile** such as `FROM`, `RUN`, `COPY`, `ADD`, etc.
 
 ### 🔹 How Layers are Created
-
 * Each instruction in the Dockerfile creates a **new layer**.
 * Example:
 
@@ -88,6 +95,8 @@
 * Efficient storage (layer sharing)
 * Consistency across environments
 * Easy rollback (reuse previous layers)
+
+---
 
 ### Port Binding 
 
@@ -153,6 +162,11 @@
 * Helps control which services are exposed.
 
 ---
+
+### Docker Network
+
+A Docker network is a virtual networking layer created by Docker that allows containers to communicate with each other and with external systems in a controlled and isolated way. It manages how containers discover one another, exchange data, and access resources, using different network types such as bridge (default for single-host communication), host (shares the host’s network), and overlay (used for multi-host or cluster setups). Docker networks also provide features like automatic DNS resolution between containers, IP address management, and network isolation, making it easier to build scalable and secure containerized applications.
+
 
 
 
