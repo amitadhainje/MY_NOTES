@@ -84,12 +84,11 @@
 
 
 - Claude Custom Instructions -- AI sometimes becomes a people pleaser 
-## Goal
-## Context - Ask if any other context is required
-## Action - What should be the course of action.
-## Output - What should be the exact output format
-Make sure that you ask me questions regarding the problem so we can tackle the whole task effectively.
-Don't always or unnecessary agree with me, make sure that you present what exactly is best for the task in hand
+    - Goal
+    - Context - Ask if any other context is required
+    - Action - What should be the course of action.
+    - Output - What should be the exact output format
+    - Make sure that you ask me questions regarding the problem so we can tackle the whole task effectively. Don't always or unnecessary agree with me, make sure that you present what exactly is best for the task in hand
 
 - Claude Models - Claude divides the models into - Haiku, Sonet and Opus
     - Haiku - Fast , Simple Tasks, Low Cost , Gives quick answers
