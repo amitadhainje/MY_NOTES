@@ -54,4 +54,27 @@ LLMs are used to build the following applications -
 - Three roles used in GPT-Style Prompting - 
   - **System Role** - The system role sets the overall behavior and rules for the model. It acts like a high-level instruction layer that defines tone, constraints, and boundaries (e.g., “be concise” or “act as a tutor”). These instructions persist throughout the conversation and guide how the assistant responds. It has the strongest influence among all roles.
   - **User Role** - The user role represents the actual input or query given by the person interacting with the model. It contains the questions, instructions, or tasks the user wants the model to perform. The assistant primarily responds to this role while still respecting system-level rules. It can vary turn by turn in a conversation.
- - **Assistant Role** - The assistant role contains the model’s responses to the user. It reflects how the model interprets and answers the user’s query based on both system instructions and prior conversation context. Previous assistant messages also help maintain continuity and context in multi-turn conversations.
+- **Assistant Role** - The assistant role contains the model’s responses to the user. It reflects how the model interprets and answers the user’s query based on both system instructions and prior conversation context. Previous assistant messages also help maintain continuity and context in multi-turn conversations.
+
+- List of Small Projects - 
+   - Generate a sales brochure using a link
+  
+# Try out the keys of the following models. Do a jupyter notebook for using all the API keys using OpenAI API- 
+- OpenAI API Key - https://openai.com/api
+- anthropic - 
+- Google
+- DeepSeek
+- Groq
+- Grok
+- https://openrouter.ai/apps - 
+
+# Also, practise with paid and open source models for the above models
+
+# Routers
+In AI, a router is a component that directs an incoming query to the most appropriate model, agent, or pipeline. Instead of sending every request to one large model, a router classifies the query first — then forwards it to a specialist. For example, a coding question goes to a code-focused model, a medical question goes to a fine-tuned medical model. This saves cost and improves accuracy by matching tasks to the right tool.
+---
+# Abstraction layers
+An abstraction layer sits between your application and the underlying AI models, hiding the complexity of directly calling APIs. It gives you a unified interface so you can swap out models (GPT-4, Claude, Gemini) without rewriting your app logic. Frameworks like LangChain, LlamaIndex, and LiteLLM are examples — they abstract away differences in API formats, token counting, memory handling, and tool use.
+--- 
+
+# Starting to Explore LangChain and LiteLLM 
